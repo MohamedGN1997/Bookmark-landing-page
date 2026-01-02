@@ -1,0 +1,23 @@
+*{margin: 0px;padding: 0px;list-style: none;text-decoration: none;box-sizing: border-box;}
+:root{
+    --colorNavBar:rgb(36, 42, 69) ;
+    --colorBtn0:rgb(250, 89, 89) ;
+}
+html{max-width: 1440px;margin: 0px auto;}
+body header{border: 1px solid red;margin: 0px auto;}
+body header .container .navbar{max-width:90%;border: 1px solid blue; margin:48px auto;display: flex;justify-content: space-between;}
+body header .container .navbar .logo{display: flex;align-items: center;}
+body header .container .navbar .logo .icon{display: flex;align-items: center;}
+body header .container .navbar .logo .icon svg:last-child{margin-left:12px;}
+body header .container .navbar nav {display:flex;align-items: center;}
+body header .container .navbar nav .list{display:flex;}
+body header .container .navbar nav .list li{margin-right: 48px;}
+body header .container .navbar nav .list li a{color:var(--colorNavBar);}
+body header .container .navbar nav .btn{color: #fff;background-color:var(--colorBtn0);border: none;border-radius: 5px;padding: 5px;cursor: pointer;}
+body header .container .contentBottom{display: flex;align-items: center;}
+body header .container .contentBottom .contentLeft{max-width: 540px;margin-left: 100px;}
+body header .container .contentBottom .contentLeft p{margin: 24px 0px;}
+body header .container .contentBottom .contentLeft .btns button{display: inline-block;}
+body header .container .contentBottom .contentLeft .btns button:first-child{padding: 5px;background-color: rgb(82, 103, 223);color: white;}
+body header .container .contentBottom .contentLeft .btns button:last-child{background-color:transparent;color:rgb(91, 96, 116);border: none;margin-right: 10px;}
+body header .container .contentBottom .contentRight{max-width: 735px;}
