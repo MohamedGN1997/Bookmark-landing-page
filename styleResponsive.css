@@ -1,0 +1,26 @@
+@charset "UTF-8"; 
+
+/*Start Responsive*/
+/*start header*/
+    /*start navbar*/
+@media(max-width : 768px){
+    body header .navbar nav{display: none;}
+    body header .navbar .humbrger-icon{display: block;}
+}
+    /*start contentBottom*/
+@media(max-width : 1276px){
+    body header .container .contentBottom{flex-direction: column-reverse;gap:48px;align-items: flex-end;}
+    body header .container .contentBottom .contentLeft{margin: 0px auto;}
+    body header .container .contentBottom .contentLeft h1,p{text-align: center;}
+    body header .container .contentBottom .contentLeft .btns{justify-content: center;}
+}
+@media(max-width : 736px){
+    
+    body header .container .contentBottom .contentLeft{max-width: 90%;}
+    body header .container .contentBottom .contentLeft h1{font-size: 30px;}
+    body header .container .contentBottom .contentLeft p{font-size: 15px;}
+    body header .container .contentBottom .contentLeft .btns{flex-direction: column;}
+}
+
+/*start main*/
+    /*start section_0*/
