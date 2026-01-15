@@ -19,6 +19,7 @@
     body header .container .contentBottom .contentLeft h1{font-size: 30px;}
     body header .container .contentBottom .contentLeft p{font-size: 15px;}
 }
+/* end header */
 
 /*start main*/
     /*start section_0*/
@@ -39,10 +40,40 @@
     body main section.section_0 .container .slider .contentsSlider .contentRight .title{font-size: 30px;}
     body main section.section_0 .container .slider .contentsSlider .contentRight .description{font-size: 15px;}
 }
+    /*start section_1*/
+@media(max-width : 1276px){
+    body main section.section_1 .container .cardsExtension {flex-wrap: wrap;padding: 26px;gap: 46px;}
+    body main section.section_1 .container .cardsExtension .card{margin: 0px;}
+    body main section.section_1 .container .cardsExtension .card.crdFirefox {margin-top: 0px;}
+    body main section.section_1 .container .cardsExtension .card.crdOpera {margin-top:0px;}
+}
+    /*start section_2*/
+@media(max-width : 736px){
+    body main section.section_2 .container  .faq-header .title{font-size: 30px;}
+    body main section.section_2 .container  .faq-header .description{font-size: 15px;}
+    body main section.section_2 .container  .faq-list .faq-item .question{font-size: 15px;}
+}
+    /*start section_3*/
+@media(max-width : 736px){
+    body main section.section_3 .container .text-container h3.supheading{font-size: 12px;}
+    body main section.section_3 .container .text-container h1.heading{font-size: 30px;}
+    body main section.section_3 .container .input-container{flex-direction: column;justify-content: center;}
+    body main section.section_3 .container .input-container .email-Input{width: 100%;}
+    body main section.section_3 .container .input-container .button-Input{width: 100%;}
+}
+/* end main */
 
-
-
-
+/* start footer */
+@media(max-width : 736px){
+    body footer .container{flex-direction: column;gap: 48px;}
+    body footer .container .content-left{flex-direction: column;gap: 48px;}
+    body footer .container .content-left .icon-container .logo{font-size: 30px;}
+    body footer .container .content-left .menu-items-list{margin-left: 0px;}
+}
+@media(max-width : 375px){
+    body footer .container .content-left .menu-items-list .menu-item{flex-direction: column;align-items: center;}
+}
+/* end footer */
 
 
 /* ====================================== >>> para hacer un comentario pulse "CTRL + }" */
