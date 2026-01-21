@@ -3,6 +3,10 @@
 /*Start Responsive*/
 /*start header*/
     /*start navbar*/
+@media(min-width : 768px){
+    body .navbar-menu.active{visibility:hidden;}
+    body header .navbar.active{visibility:visible;}
+}
 @media(max-width : 768px){
     body header .navbar nav{display: none;}
     body header .navbar .humbrger-icon{display: block;}
