@@ -28,21 +28,21 @@
 /*start main*/
     /*start section_0*/
 @media(max-width : 1276px){
-    body main section.section_0 .container .slider .contentsSlider{flex-direction: column;align-items: flex-start;}
-    body main section.section_0 .container .slider .contentsSlider .contentRight{margin: 0px auto;}
-    body main section.section_0 .container .slider .contentsSlider .contentRight .title{text-align: center;}
-    body main section.section_0 .container .slider .contentsSlider .contentRight .description{text-align: center;}
-    body main section.section_0 .container .slider .contentsSlider .contentRight .btn{margin: 0px auto;}
+    body main section.section_0 .container .features-section .slider .contentsSlider{flex-direction: column;align-items: flex-start;}
+    body main section.section_0 .container .features-section .slider .contentsSlider .contentRight{margin: 0px auto;}
+    body main section.section_0 .container .features-section .slider .contentsSlider .contentRight .title{text-align: center;}
+    body main section.section_0 .container .features-section .slider .contentsSlider .contentRight .description{text-align: center;}
+    body main section.section_0 .container .features-section .slider .contentsSlider .contentRight .btn{margin: 0px auto;}
 }
 @media(max-width : 736px){
     body main section.section_0 .container .content_top {max-width: 90%;}
     body main section.section_0 .container .content_top h1{font-size: 30px;}
     body main section.section_0 .container .content_top p{font-size: 15px;}
-    body main section.section_0 .container .slider .orders{flex-direction: column;}
-    body main section.section_0 .container .slider .orders .order{font-size: 15px;}
-    body main section.section_0 .container .slider .contentsSlider .contentRight{max-width: 90%;}
-    body main section.section_0 .container .slider .contentsSlider .contentRight .title{font-size: 30px;}
-    body main section.section_0 .container .slider .contentsSlider .contentRight .description{font-size: 15px;}
+    body main section.section_0 .container .features-section .orders{flex-direction: column;}
+    body main section.section_0 .container .features-section .orders .order{font-size: 15px;}
+    body main section.section_0 .container .features-section .slider .contentsSlider .contentRight{max-width: 90%;}
+    body main section.section_0 .container .features-section .slider .contentsSlider .contentRight .title{font-size: 30px;}
+    body main section.section_0 .container .features-section .slider .contentsSlider .contentRight .description{font-size: 15px;}
 }
     /*start section_1*/
 @media(max-width : 1276px){
