@@ -3,7 +3,7 @@
 :root{
     --colorBlueDark:rgb(36, 42, 69) ;
     --colorBlueLight:rgb(82, 103, 223) ;
-    --colorRed:rgb(250, 89, 89) ;
+    --colorOrange:rgb(250, 89, 89) ;
     --colorGreyDark:rgb(91, 96, 116) ;
     --colorGreyLight:rgb(247, 247, 247) ;
     --colorWhite:rgb(255,255,255) ;
@@ -22,6 +22,7 @@ body .navbar-menu .container .logo .humbrger-icon .humbrger-open,.humbrger-close
 body .navbar-menu .container .logo .humbrger-icon .active{display: none;}
 body .navbar-menu .container nav {margin: 48px 0px;}
 body .navbar-menu .container nav .list li a{display: block;text-align: center;padding: 12px 0px;border-bottom:1px solid var(--colorGreyLight);color: var(--colorWhite);}
+body .navbar-menu .container nav .list li a:hover{color: var(--colorOrange);}
 body .navbar-menu .container nav .list li:first-child a{border-top:1px solid var(--colorGreyLight);}
 body .navbar-menu .container button.btn{display: block;width: 100%;height: 48px;color: var(--colorWhite);background-color: transparent;border: 1px solid var(--colorWhite);cursor: pointer;}
 body .navbar-menu .container .social-media-icons{display: flex;position: absolute;bottom: 48px;justify-content: center;width: 100%;gap: 40px;}
@@ -37,7 +38,9 @@ body header .navbar nav {display:flex;align-items: center;}
 body header .navbar nav .list{display:flex;}
 body header .navbar nav .list li{margin-right: 24px;}
 body header .navbar nav .list li a{color:var(--colorBlueDark);font-size: 14px;}
-body header .navbar nav .btn{color: var(--colorWhite);background-color:var(--colorRed);border: none;border-radius: 5px;padding: 5px 30px;cursor: pointer;font-size: 14px;}
+body header .navbar nav .list li a:hover{color: var(--colorOrange);}
+body header .navbar nav .btn{color: var(--colorWhite);background-color:var(--colorOrange);border: 1px solid transparent;border-radius: 5px;padding: 5px 30px;cursor: pointer;font-size: 14px;}
+body header .navbar nav .btn:hover{color: var(--colorOrange);border: 1px solid var(--colorOrange);background-color: transparent;}
 body header .navbar .humbrger-icon {position: absolute; top:calc(calc(calc(26 - 18.6) / 2) * 1px);right: 0px;display: none;}
 body header .navbar .humbrger-icon .humbrger-open,.humbrger-close{cursor: pointer;}
 body header .navbar .humbrger-icon .active{display: none;}
@@ -48,29 +51,31 @@ body header .container .contentBottom .contentLeft{width: 540px;padding: 24px;}
 body header .container .contentBottom .contentLeft h1{color: var(--colorBlueDark);font-size: 48px;display: block;}
 body header .container .contentBottom .contentLeft p{margin: 24px 0px;font-size: 18px;color: var(--colorBlueDark);}
 body header .container .contentBottom .contentLeft .btns {display: flex;gap: 16px;}
-body header .container .contentBottom .contentLeft .btns button{display: inline-block;cursor: pointer;padding: 17px;font-size:14px;}
-body header .container .contentBottom .contentLeft .btns button:first-child{padding: 5px;background-color: var(--colorBlueLight);color: var(--colorWhite);}
-body header .container .contentBottom .contentLeft .btns button:last-child{background-color:transparent;color:var(--colorGreyDark);border: none;}
+body header .container .contentBottom .contentLeft .btns button{display: inline-block;cursor: pointer;padding: 17px;font-size:14px;border: 1px solid transparent;}
+body header .container .contentBottom .contentLeft .btns button:first-child{padding: 5px 15px;background-color: var(--colorBlueLight);color: var(--colorWhite);}
+body header .container .contentBottom .contentLeft .btns button:first-child:hover{background-color: transparent;color: var(--colorBlueLight);border: 1px solid var(--colorBlueLight);}
+body header .container .contentBottom .contentLeft .btns button:last-child{background-color:transparent;color:var(--colorGreyDark);}
+body header .container .contentBottom .contentLeft .btns button:last-child:hover{border:1px solid var(--colorGreyDark);}
 body header .container .contentBottom .contentRight{width: 100%;max-width: 735px;max-height: 486px;}
 body header .container .contentBottom .contentRight  svg{height: 100%;width:100%;}
 /*end header*/
 /*start main*/
     /*start section_0*/
-body main section.section_0 .container .features{margin: 48px auto;}
 body main section.section_0 .container .content_top {max-width: 540px;margin: 0px auto 72px auto;}
 body main section.section_0 .container .content_top h1{display:block;text-align: center;color: var(--colorBlueDark);font-size: 32px;}
 body main section.section_0 .container .content_top p{color: var(--colorGreyDark);text-align: center;max-width: 540px;margin: 0px auto;margin-top:16px;font-size: 18px;}
-body main section.section_0 .container .slider .orders{display: flex;justify-content:center;align-items: center;gap: 48px;}
-body main section.section_0 .container .slider .orders .order{display: block;color: var(--colorGreyDark);cursor: pointer;padding-bottom: 24px;border-bottom: 3px SOLID transparent;}
-body main section.section_0 .container .slider .orders .order:hover{color: var(--colorBlueDark);border-bottom: 3px SOLID var(--colorRed);}
-body main section.section_0 .container .slider .orders .order:first-child{border-bottom: 3px SOLID var(--colorRed);color: var(--colorBlueDark);}
-body main section.section_0 .container .slider .contentsSlider{display: flex;align-items: center;justify-content: flex-start;gap: 64px;}
-body main section.section_0 .container .slider .contentsSlider .contentLeft{width: 100%;max-width: 768px;}
-body main section.section_0 .container .slider .contentsSlider .contentLeft svg{height: 100%;width:100%;}
-body main section.section_0 .container .slider .contentsSlider .contentRight{width: 450px;}
-body main section.section_0 .container .slider .contentsSlider .contentRight .title{color: var(--colorBlueDark);font-size: 32px;}
-body main section.section_0 .container .slider .contentsSlider .contentRight .description{color: var(--colorGreyDark);margin: 24px 0px;font-size: 18px; }
-body main section.section_0 .container .slider .contentsSlider .contentRight .btn{display: block; color: var(--colorWhite);background-color: var(--colorBlueLight);padding:10px 24PX;font-size: 14px; cursor: pointer;}
+body main section.section_0 .container .features-section .orders{display: flex;justify-content:center;align-items: center;gap: 48px;}
+body main section.section_0 .container .features-section .orders .order{display: block;color: var(--colorGreyDark);cursor: pointer;padding-bottom: 24px;border-bottom: 3px SOLID transparent;}
+body main section.section_0 .container .features-section .orders .order.active{border-bottom: 3px SOLID var(--colorOrange);color: var(--colorBlueDark);}
+body main section.section_0 .container .features-section .orders .order:hover{color: var(--colorOrange);}
+body main section.section_0 .container .features-section .slider .contentsSlider.active{display: flex;}
+body main section.section_0 .container .features-section .slider .contentsSlider{display: none;align-items: center;justify-content: flex-start;gap: 64px;}
+body main section.section_0 .container .features-section .slider .contentsSlider .contentLeft{width: 100%;max-width: 768px;}
+body main section.section_0 .container .features-section .slider .contentsSlider .contentLeft svg{height: 100%;width:100%;}
+body main section.section_0 .container .features-section .slider .contentsSlider .contentRight{width: 450px;}
+body main section.section_0 .container .features-section .slider .contentsSlider .contentRight .title{color: var(--colorBlueDark);font-size: 32px;}
+body main section.section_0 .container .features-section .slider .contentsSlider .contentRight .description{color: var(--colorGreyDark);margin: 24px 0px;font-size: 18px; }
+body main section.section_0 .container .features-section .slider .contentsSlider .contentRight .btn{display: block; color: var(--colorWhite);background-color: var(--colorBlueLight);padding:10px 24PX;font-size: 14px; cursor: pointer;}
 
     /*start section_1*/
 body main section.section_1 {padding:118px 0px;}
@@ -86,18 +91,26 @@ body main section.section_1 .container .cardsExtension .card img{ margin: 0px au
 body main section.section_1 .container .cardsExtension .card span{text-align: center;display: block;}
 body main section.section_1 .container .cardsExtension .card span.title{font-size: 20px;margin: 32px 0px 8px 0px;}
 body main section.section_1 .container .cardsExtension .card span.description{font-size: 14px;}
-body main section.section_1 .container .cardsExtension .card button{margin-top: 52px;padding: 10px;background-color: var(--colorBlueLight);color: var(--colorWhite);border: none;cursor: pointer;}
+body main section.section_1 .container .cardsExtension .card button{margin-top: 52px;padding: 10px;background-color: var(--colorBlueLight);color: var(--colorWhite);border: 1px solid transparent; cursor: pointer;}
+body main section.section_1 .container .cardsExtension .card button:hover{color: var(--colorBlueLight);border: 1px solid var(--colorBlueLight);background-color: transparent;}
     /*start section_2*/
 body main section.section_2 {padding: 0px 0px 118px 0px;}
 body main section.section_2 .container {width: 90%; max-width: 540px;margin: 0px auto;}
 body main section.section_2 .container  .faq-header .title{color: var(--colorBlueDark);text-align: center;font-size: 32px;}
 body main section.section_2 .container  .faq-header .description{color: var(--colorGreyDark);text-align: center;font-size: 18px;margin-top: 16px;margin-bottom: 32px; }
 body main section.section_2 .container  .faq-list{margin: 20px 0px;}
-body main section.section_2 .container  .faq-list .faq-item{display: flex;align-items: center;justify-content: space-between;border-bottom: 1px solid var(--colorGreyDark);margin-top: 10px;padding-bottom: 10px;}
-body main section.section_2 .container  .faq-list .faq-item:first-child{margin-bottom: 10px;padding-top: 10px;}
-body main section.section_2 .container  .faq-list .faq-item .question{font-size: 18px;}
-body main section.section_2 .container  .faq-list .faq-item .icons .angle-up{display: none;cursor: pointer;}
-body main section.section_2 .container  .faq-list .faq-item .icons .angle-down{cursor: pointer;}
+body main section.section_2 .container  .faq-list .faq-item .question-icons{display: flex;align-items: center;justify-content: space-between;cursor: pointer; border-bottom: 1px solid var(--colorGreyDark);margin-top: 10px;padding-bottom: 10px;}
+body main section.section_2 .container  .faq-list .faq-item .question-icons:first-child{margin-bottom: 10px;padding-top: 10px;}
+body main section.section_2 .container  .faq-list .faq-item .question-icons .question{font-size: 18px;cursor: pointer;color: var(--colorBlueDark);}
+body main section.section_2 .container  .faq-list .faq-item .question-icons .icons .angle-up{display: none;cursor: pointer;stroke: var(--colorBlueLight);}
+body main section.section_2 .container  .faq-list .faq-item .question-icons .icons .angle-down{display:none; cursor: pointer;stroke: var(--colorBlueLight);}
+body main section.section_2 .container  .faq-list .faq-item .question-icons .icons .icon.active{display: block;}
+body main section.section_2 .container  .faq-list .faq-item .question-icons:hover .question{color: var(--colorOrange);}
+body main section.section_2 .container  .faq-list .faq-item .question-icons:hover .angle-down > svg{stroke: var(--colorOrange);}
+body main section.section_2 .container  .faq-list .faq-item .question-icons:hover .angle-up > svg{stroke: var(--colorOrange);}
+body main section.section_2 .container  .faq-list .faq-item .content-text{display: none;}
+body main section.section_2 .container  .faq-list .faq-item .content-text.active{display: block;}
+body main section.section_2 .container  .faq-list .faq-item .content-text p{color: var(--colorBlueDark);font-size: 16px;text-align: justify;font-weight: 100;}
 body main section.section_2 .container  .more-info-button .button{cursor: pointer;display: block; margin: 0px auto;color: var(--colorWhite);background-color: var(--colorBlueLight);padding: 10px;}
     /*start section_3*/
 body main section.section_3{background-color: var(--colorBlueLight);padding: 56px 0px;}
@@ -107,7 +120,8 @@ body main section.section_3 .container .text-container h3.supheading{font-size: 
 body main section.section_3 .container .text-container h1.heading{font-size: 32px;margin-top: 24px;}
 body main section.section_3 .container .input-container{display: flex;  justify-content: space-between;align-items: center;margin-top: 32px;gap: 16px;}
 body main section.section_3 .container .input-container .email-Input{width: 300px;height: 48px;text-indent: 15px;}
-body main section.section_3 .container .input-container .button-Input{width: 126px; height: 48px;background-color: var(--colorRed);color: var(--colorWhite);cursor: pointer;}
+body main section.section_3 .container .input-container .button-Input{width: 126px; height: 48px;background-color: var(--colorOrange);color: var(--colorWhite);cursor: pointer;}
+body main section.section_3 .container .input-container .button-Input:hover{background-color: #fff;color: var(--colorOrange);border: 1px solid var(--colorOrange);}
 /*end main*/
 /*start footer*/
 body footer{background-color: var(--colorBlueDark);padding: 30px 0px;}
@@ -119,5 +133,8 @@ body footer .container .content-left .icon-container .logo{color: var(--colorWhi
 body footer .container .content-left .menu-items-list{margin-left: 40px;max-width: 228px;}
 body footer .container .content-left .menu-items-list .menu-item{display: flex;gap: 20px;}
 body footer .container .content-left .menu-items-list .item a{color: var(--colorWhite);cursor: pointer;font-size: 14px;}
+body footer .container .content-left .menu-items-list .item a:hover{color: var(--colorOrange);}
 body footer .container .social-media-icons{display: flex;align-items: center;gap: 40px;}
+body footer .container .social-media-icons .icon svg{fill: var(--colorWhite);cursor: pointer;}
+body footer .container .social-media-icons .icon svg:hover{fill: var(--colorOrange);}
 /*end footer*/
