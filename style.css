@@ -25,7 +25,10 @@ body .navbar-menu .container nav .list li a{display: block;text-align: center;pa
 body .navbar-menu .container nav .list li a:hover{color: var(--colorOrange);}
 body .navbar-menu .container nav .list li:first-child a{border-top:1px solid var(--colorGreyLight);}
 body .navbar-menu .container button.btn{display: block;width: 100%;height: 48px;color: var(--colorWhite);background-color: transparent;border: 1px solid var(--colorWhite);cursor: pointer;}
+body .navbar-menu .container button.btn:hover{color: var(--colorOrange);border: 1px solid var(--colorOrange);}
 body .navbar-menu .container .social-media-icons{display: flex;position: absolute;bottom: 48px;justify-content: center;width: 100%;gap: 40px;}
+body .navbar-menu .container .social-media-icons .icon svg{cursor: pointer; fill: var(--colorWhite);}
+body .navbar-menu .container .social-media-icons .icon svg:hover{fill: var(--colorOrange);}
 
 /*start header*/
     /* start navbar*/
