@@ -13,8 +13,9 @@ A responsive landing page built using HTML, CSS, and JavaScript as a front-end p
 - JavaScript
 
 ## 📸 Preview
-[Desktop Preview : ./images/desktop-preview.jpeg
-[Mobile Preview] : ./images/mobile-preview.jpeg
+
+[Desktop Preview : ./imgs/desktop-preview.jpeg
+[Mobile Preview] : ./imgs/mobile-preview.jpeg
 
 ## ▶️ How to Run
 Just open [https://mohamedgn1997.github.io/Bookmark-landing-page] in your browser.
