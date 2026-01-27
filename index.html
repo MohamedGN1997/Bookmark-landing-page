@@ -87,7 +87,7 @@
         <main id="main">
             <!-- start section 0 -->
             <section class="section section_0">
-                <div class="container">
+                <container class="container">
                     <div class="content_top">
                         <h1>Features</h1>
                         <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
@@ -133,7 +133,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </container>
             </section>
             <!-- start section 1 -->
             <section class="section section_1">
@@ -235,7 +235,13 @@
                         <h1 class="heading">Stay up-to-date with what we’re doing</h1>
                     </div>
                     <div class="input-container">
-                        <input class="email-Input"  title="Enter your email address" type="email" placeholder="Enter your email address">
+                        <div class="inp">
+                            <input class="email-Input"  title="Enter your email address" type="email" placeholder="Enter your email address">
+                            <p class="msgErorr">
+                                <!-- <span class="valid-email">“This is a valid email address.”</span> -->
+                                <span class="invalid-email">“Whoops, make sure it’s an email”</span>
+                            </p>
+                        </div>
                         <input class="button-Input" title="Contact Us"  type="button" value="Contact Us">
                     </div>
                 </div>
@@ -275,4 +281,3 @@
 
 
 <!-- write a Readme.md-->
-
