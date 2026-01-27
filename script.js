@@ -58,3 +58,28 @@ faqItems.forEach(function(faqItem){
         }
     });
 })
+
+
+// Receive an error message when the newsletter form is submitted if:
+//  The input field is empty
+//  The email address is not formatted correctly
+
+        // USING REGULAR EXPRESION 
+        
+let inpBtn = document.querySelector("body main section.section_3 .container .input-container .button-Input");
+let inpEmail = document.querySelector("body main section.section_3 .container .input-container .email-Input");
+let msgErorr = document.querySelector("body main section.section_3 .container .input-container .inp .msgErorr .invalid-email");
+inpBtn.addEventListener("click",function(){
+    let invalidEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(inpEmail.value);
+    if(invalidEmail){
+        inpEmail.value = "";
+        inpEmail.setAttribute("placeholder","Enter your email address");
+        inpEmail.classList.remove("active");
+        msgErorr.classList.remove("active");
+    }else{
+        inpEmail.setAttribute("placeholder","example@email/com");
+        inpEmail.value = "";
+        inpEmail.classList.add("active");
+        msgErorr.classList.add("active");
+    }
+});
