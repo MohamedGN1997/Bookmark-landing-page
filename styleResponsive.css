@@ -62,7 +62,8 @@
     body main section.section_3 .container .text-container h3.supheading{font-size: 12px;}
     body main section.section_3 .container .text-container h1.heading{font-size: 30px;}
     body main section.section_3 .container .input-container{flex-direction: column;justify-content: center;}
-    body main section.section_3 .container .input-container .email-Input{width: 100%;}
+    body main section.section_3 .container .input-container .inp .email-Input{width: 100%;}
+    body main section.section_3 .container .input-container .inp .msgErorr .invalid-email{width: 100%;}
     body main section.section_3 .container .input-container .button-Input{width: 100%;}
 }
 /* end main */
